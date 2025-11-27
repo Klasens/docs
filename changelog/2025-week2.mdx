@@ -1,7 +1,8 @@
-# Week 2 Changelog
-**Period:** January 8 - January 14, 2024
+# Changelog — Week 2
 
-## 🚀 New Features
+Here's what shipped this week:
+
+## New Features
 
 ### User Authentication
 - Added password reset functionality via email
@@ -18,7 +19,7 @@
 - Implemented rate limiting on public API endpoints (100 requests/minute)
 - Added webhook support for payment status updates
 
-## 🐛 Bug Fixes
+## Bug Fixes
 
 - Fixed issue where profile images weren't displaying correctly on mobile devices
 - Resolved memory leak in WebSocket connection handler
@@ -27,7 +28,7 @@
 - Resolved race condition in concurrent payment processing
 - Fixed broken pagination on the transactions list page
 
-## 🔧 Improvements
+## Improvements
 
 ### Performance
 - Optimized database queries for the main dashboard (40% faster load time)
@@ -46,33 +47,33 @@
 - Added pre-commit hooks for code formatting and linting
 - Expanded test coverage from 68% to 79%
 
-## 🔒 Security
+## Security
 
 - Updated dependencies with known vulnerabilities (3 critical, 7 high)
 - Implemented CSRF protection on all state-changing endpoints
 - Added input sanitization for user-generated content
 - Enabled strict Content Security Policy headers
 
-## 📚 Documentation
+## Documentation
 
 - Created API integration guide with code examples
 - Added troubleshooting section to user documentation
 - Updated architecture diagrams to reflect new microservices
 - Documented deployment rollback procedures
 
-## 🗑️ Deprecations
+## Deprecations
 
 - Deprecated `/api/v1/users/search` endpoint (use `/api/v2/users/query` instead)
 - Legacy theme system will be removed in Week 4
 
-## 📊 Metrics
+## Metrics
 
 - 47 commits merged
 - 12 pull requests closed
 - 8 issues resolved
 - 3 new issues opened
 
-## 👥 Contributors
+## Contributors
 
 - @sarah.chen - Authentication & Security
 - @mike.rodriguez - Dashboard & Frontend
@@ -80,9 +81,11 @@
 - @david.kim - Performance & Infrastructure
 - @alex.patel - Documentation & Testing
 
-## 🎯 Next Week Focus
+## Next Week Focus
 
 - Complete migration to new authentication service
 - Implement advanced search filters
 - Begin work on notification system
 - Performance testing for 10k concurrent users
+
+![Screenshot](/images/screenshot1.png)
