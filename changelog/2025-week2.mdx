@@ -1,0 +1,91 @@
+# Changelog — Week 2
+
+Here's what shipped this week:
+
+## New Features
+
+### User Authentication
+- Added password reset functionality via email
+- Implemented "Remember Me" option on login page
+- Added session timeout warning (15 minutes before expiration)
+
+### Dashboard Improvements
+- Introduced customizable dashboard widgets
+- Added drag-and-drop widget reordering
+- New analytics card showing weekly user activity trends
+
+### API Enhancements
+- Added `/api/v2/users/bulk-import` endpoint for importing multiple users via CSV
+- Implemented rate limiting on public API endpoints (100 requests/minute)
+- Added webhook support for payment status updates
+
+## Bug Fixes
+
+- Fixed issue where profile images weren't displaying correctly on mobile devices
+- Resolved memory leak in WebSocket connection handler
+- Corrected timezone conversion errors in export reports
+- Fixed validation error that prevented special characters in usernames
+- Resolved race condition in concurrent payment processing
+- Fixed broken pagination on the transactions list page
+
+## Improvements
+
+### Performance
+- Optimized database queries for the main dashboard (40% faster load time)
+- Implemented Redis caching for frequently accessed user preferences
+- Reduced bundle size by 120KB through lazy loading of admin components
+
+### UI/UX
+- Updated color contrast ratios to meet WCAG AA standards
+- Improved mobile responsiveness on the settings page
+- Added loading skeletons to all data-heavy pages
+- Enhanced error messages with actionable next steps
+
+### Developer Experience
+- Added comprehensive JSDoc comments to all utility functions
+- Updated local development setup documentation
+- Added pre-commit hooks for code formatting and linting
+- Expanded test coverage from 68% to 79%
+
+## Security
+
+- Updated dependencies with known vulnerabilities (3 critical, 7 high)
+- Implemented CSRF protection on all state-changing endpoints
+- Added input sanitization for user-generated content
+- Enabled strict Content Security Policy headers
+
+## Documentation
+
+- Created API integration guide with code examples
+- Added troubleshooting section to user documentation
+- Updated architecture diagrams to reflect new microservices
+- Documented deployment rollback procedures
+
+## Deprecations
+
+- Deprecated `/api/v1/users/search` endpoint (use `/api/v2/users/query` instead)
+- Legacy theme system will be removed in Week 4
+
+## Metrics
+
+- 47 commits merged
+- 12 pull requests closed
+- 8 issues resolved
+- 3 new issues opened
+
+## Contributors
+
+- @sarah.chen - Authentication & Security
+- @mike.rodriguez - Dashboard & Frontend
+- @emma.wilson - API Development
+- @david.kim - Performance & Infrastructure
+- @alex.patel - Documentation & Testing
+
+## Next Week Focus
+
+- Complete migration to new authentication service
+- Implement advanced search filters
+- Begin work on notification system
+- Performance testing for 10k concurrent users
+
+![Screenshot](/images/screenshot1.png)
