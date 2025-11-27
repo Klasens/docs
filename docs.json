@@ -66,6 +66,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "Updates",
+            "pages": [
+              "changelog/2025-week1"
+            ]
+          }
+        ]
       }
     ],
     "global": {
