@@ -1,0 +1,99 @@
+# Changelog — Week 3
+
+![Week 3 changelog highlights showing new features and improvements](/images/changelog.png)
+
+Here's what shipped this week:
+
+## New Features
+
+### Notification System
+- Launched real-time push notifications for web and mobile
+- Added notification preferences panel in user settings
+- Implemented email digest option (daily/weekly summary)
+- Created in-app notification center with read/unread states
+
+### Advanced Search
+- Introduced full-text search across all content types
+- Added filter chips for date range, status, and category
+- Implemented saved searches for quick access
+- Added recent searches history with clear option
+
+### Team Collaboration
+- Launched shared workspaces for team projects
+- Added real-time collaborative editing on documents
+- Implemented @mentions with instant notifications
+- Created activity feed showing team member actions
+
+## Bug Fixes
+
+- Fixed notification delivery delays during peak traffic hours
+- Resolved search index corruption affecting older records
+- Corrected file upload progress bar showing incorrect percentage
+- Fixed SSO login loop when session cookies are blocked
+- Resolved duplicate email notifications being sent
+- Fixed dark mode toggle not persisting across browser sessions
+- Corrected currency formatting for non-USD locales
+
+## Improvements
+
+### Performance
+- Reduced API response times by 35% through query optimization
+- Implemented connection pooling for database operations
+- Added CDN caching for static assets (75% faster load times)
+- Optimized image compression reducing bandwidth by 40%
+
+### UI/UX
+- Redesigned onboarding flow with interactive tutorials
+- Added keyboard shortcuts for power users (press `?` to view)
+- Improved form validation with inline error messages
+- Enhanced table sorting with multi-column support
+
+### Developer Experience
+- Migrated from Jest to Vitest for faster test execution
+- Added OpenAPI 3.1 specification for all endpoints
+- Implemented structured logging with correlation IDs
+- Created developer sandbox environment with mock data
+
+## Security
+
+- Completed SOC 2 Type II audit preparation
+- Implemented IP-based rate limiting per user
+- Added suspicious login detection with email alerts
+- Enabled two-factor authentication for admin accounts
+
+## Documentation
+
+- Published notification system integration guide
+- Added WebSocket event reference documentation
+- Created team collaboration best practices guide
+- Updated API changelog with breaking change notices
+
+## Deprecations
+
+- Legacy theme system removed (as announced in Week 2)
+- `/api/v1/notifications` deprecated (use `/api/v2/notifications`)
+- Basic search endpoint will be removed in Week 5
+
+## Metrics
+
+- 62 commits merged
+- 18 pull requests closed
+- 15 issues resolved
+- 5 new issues opened
+- 99.97% uptime achieved
+
+## Contributors
+
+- @sarah.chen - Notification System
+- @mike.rodriguez - Search & UI
+- @emma.wilson - Collaboration Features
+- @david.kim - Performance & Security
+- @alex.patel - Documentation
+- @jessica.li - QA & Testing
+
+## Next Week Focus
+
+- Launch user analytics dashboard
+- Implement webhook retry mechanism
+- Begin mobile app v2.0 development
+- Complete security penetration testing
