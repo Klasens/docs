@@ -1,0 +1,104 @@
+# Changelog — Week 4
+
+![Week 4 changelog highlights showing new features and improvements](/images/week4changelog.png)
+
+Here's what shipped this week!
+
+## New Features
+
+### Analytics Dashboard
+- Launched comprehensive user analytics dashboard with real-time metrics
+- Added customizable widget system for personalized views
+- Implemented export functionality (CSV, PDF, Excel)
+- Created shareable dashboard links with permission controls
+
+### Webhook System 2.0
+- Released redesigned webhook management interface
+- Added automatic retry mechanism with exponential backoff
+- Implemented webhook signature verification (HMAC-SHA256)
+- Created webhook event log with filtering and search
+
+### Internationalization
+- Added support for 12 new languages (French, German, Spanish, Italian, Portuguese, Japanese, Korean, Chinese, Dutch, Swedish, Norwegian, Danish)
+- Implemented RTL support for Arabic and Hebrew
+- Added automatic locale detection based on browser settings
+- Created translation management portal for admins
+
+## Bug Fixes
+
+- Fixed analytics chart rendering incorrectly on Safari browsers
+- Resolved webhook delivery failures when endpoint returns 3xx redirects
+- Corrected timezone offset calculation for DST transitions
+- Fixed memory leak in real-time collaboration WebSocket connections
+- Resolved CSV export truncating special characters in non-Latin alphabets
+- Fixed dashboard widgets overlapping on mobile viewport sizes
+- Corrected password reset link expiring immediately after generation
+
+## Improvements
+
+### Performance
+- Reduced dashboard initial load time by 60% with lazy loading
+- Implemented GraphQL query batching reducing API calls by 45%
+- Added Redis caching layer for frequently accessed reports
+- Optimized bundle size by 28% through tree-shaking improvements
+
+### UI/UX
+- Redesigned settings page with tabbed navigation
+- Added drag-and-drop reordering for dashboard widgets
+- Implemented smooth animations for state transitions
+- Enhanced color contrast for WCAG 2.1 AA compliance
+
+### Developer Experience
+- Released SDK v2.0 with TypeScript support
+- Added comprehensive webhook testing sandbox
+- Implemented request/response logging in development mode
+- Created CLI tool for local development and debugging
+
+## Security
+
+- Implemented Content Security Policy (CSP) headers
+- Added CSRF token rotation on sensitive operations
+- Enabled audit logging for all admin actions
+- Completed penetration testing with zero critical findings
+
+## Documentation
+
+- Published analytics dashboard user guide
+- Added webhook integration cookbook with 15+ examples
+- Created i18n implementation guide for developers
+- Updated SDK documentation with TypeScript examples
+
+## Deprecations
+
+- Legacy `/api/v1/analytics` endpoint deprecated (use `/api/v2/analytics`)
+- Basic search endpoint removed (as announced in Week 3)
+- Old webhook format will be sunset in Week 6
+
+## Metrics
+
+- 78 commits merged
+- 24 pull requests closed
+- 21 issues resolved
+- 8 new issues opened
+- 99.99% uptime achieved
+
+## Contributors
+
+- @sarah.chen - Analytics Dashboard
+- @mike.rodriguez - Webhook System
+- @emma.wilson - Internationalization
+- @david.kim - Performance & Security
+- @alex.patel - SDK & Documentation
+- @jessica.li - QA & Testing
+- @marcus.johnson - UI/UX Improvements
+
+## Next Week Focus
+
+- Launch mobile app v2.0 beta
+- Implement custom reporting builder
+- Add Slack and Microsoft Teams integrations
+- Begin API v3.0 design phase
+
+---
+
+*Have feedback? Reach out to us at [support@example.com](mailto:support@example.com)*
